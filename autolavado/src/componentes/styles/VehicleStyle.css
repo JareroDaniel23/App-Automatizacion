@@ -1,0 +1,82 @@
+/* ---- FORM GENERAL ---- */
+.Form_Vehicle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  background-color: #fff;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 16px; /* Espacio antes de la tabla */
+}
+
+/* Para que el ancho coincida con la tabla */
+.table-container,
+.Form_Vehicle {
+  max-width: 100%;
+}
+
+/* ---- LABELS ---- */
+.Form_Vehicle label {
+  font-weight: 600;
+  color: #333;
+  margin-right: 4px;
+}
+
+/* ---- INPUTS Y SELECT ---- */
+.input_select,
+.input_date {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  min-width: 160px;
+  transition: border-color 0.2s ease;
+}
+
+.input_select:focus,
+.input_date:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* ---- BOTÓN ---- */
+.Add_Vehicle {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.Add_Vehicle:hover {
+  background-color: #27ae60;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 700px) {
+  .Form_Vehicle {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .Form_Vehicle label {
+    margin-bottom: 4px;
+  }
+
+  .input_select,
+  .input_date {
+    width: 100%;
+  }
+
+  .Add_Vehicle {
+    width: 100%;
+    margin-top: 6px;
+  }
+}

@@ -1,0 +1,155 @@
+/*App*/
+.Body_Page {
+  max-width: 100vw;
+  overflow-y: hidden;
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Header_Cont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9d9d9;
+  border-bottom: 1px solid black;
+}
+
+.Header {
+  display: flex;
+  background-color: rgb(14, 83, 174);
+  height: 3.7rem;
+  width: 22rem;
+  border-radius: 5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+}
+/*btn-primary*/.app-btn-primary {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+
+  margin-left: 1rem; /* <-- separa el botón del texto a la izquierda */
+}
+
+.app-btn-primary:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .app-btn-primary {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 0.85rem;
+    margin-left: 0; /* se ajusta en móvil */
+    margin-top: 0.5rem; /* separación vertical en móvil */
+  }
+}
+
+
+
+
+.Line {
+  width: 100%;
+  border-color: black;
+}
+.Button_clear {
+  background: linear-gradient(135deg, #e53935, #c62828);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.Button_clear:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #f44336, #d32f2f);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ---- SECCIÓN DE EXPORTACIÓN ---- */
+.Export_Section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  background-color: #fff;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 16px; /* igual separación que el form */
+}
+
+.Export_Section label {
+  font-weight: 600;
+  color: #333;
+}
+
+.Export_Section .input_date {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease;
+}
+
+.Export_Section .input_date:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* ---- BOTÓN EXPORTAR ---- */
+.Export_Btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.Export_Btn:hover {
+  background-color: #0056b3;
+}
+
+/* 📱 Responsive (igual estilo que el form) */
+@media (max-width: 700px) {
+  .Export_Section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .Export_Section label {
+    margin-bottom: 4px;
+  }
+
+  .Export_Section .input_date,
+  .Export_Btn {
+    width: 100%;
+  }
+}
+
