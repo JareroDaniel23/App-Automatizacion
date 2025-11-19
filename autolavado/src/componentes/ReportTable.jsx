@@ -8,6 +8,7 @@ export default function ReportTable({ data, eliminarVehiculo }) {
   }
   {
     /* TODO: Crear una funcion reutilizable para no repetir el reduce  */
+    
   }
 
   const totalAgua = data.reduce((sum, d) => sum + Number(d.agua || 0), 0);

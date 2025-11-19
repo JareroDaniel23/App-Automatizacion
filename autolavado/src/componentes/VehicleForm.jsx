@@ -5,12 +5,12 @@ import './styles/VehicleStyle.css';
 export default function VehicleForm({ onSelect }) {
   const [tipo, setTipo] = useState("");
   const [minutos, setMinutos] = useState("");
-  const [fecha, setFecha] = useState(""); // Fecha del lavado
+  const [fecha, setFecha] = useState(""); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const tipoDatos = TipoVehiculo.find((v) => v.tipo === tipo);
-    if (!tipoDatos || !minutos || !fecha) return; // validar todos
+    if (!tipoDatos || !minutos || !fecha) return; 
 
     const agua = minutos * Consumo_litros_Agua_Por_Minuto;
 

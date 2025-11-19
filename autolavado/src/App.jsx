@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import RegistroForm from './componentes/RegistroForm';
 import VehicleForm from './componentes/VehicleForm';
 import ReportTable from './componentes/ReportTable';
-import SummaryPanel from './componentes/SummaryPanel';
 import Register from './flejes/Register';
 import * as XLSX from 'xlsx';
 import './componentes/styles/stylesApp.css';
@@ -21,7 +20,7 @@ function App() {
     return saved ? JSON.parse(saved) : [];
   });
 
-  const [datosVehiculo, setDatosVehiculo] = useState(null);
+  const [setDatosVehiculo] = useState(null);
   const [fechaSemana, setFechaSemana] = useState('');
 
   useEffect(() => { localStorage.setItem('vehiculos', JSON.stringify(vehiculos)); }, [vehiculos]);
@@ -143,7 +142,6 @@ function App() {
 
         <VehicleForm onSelect={agregarVehiculo} />
         <ReportTable data={vehiculos} inventario={inventario} eliminarVehiculo={eliminarVehiculo} />
-        <SummaryPanel datos={datosVehiculo} />
         <button onClick={limpiarTablaVehiculos} className='Button_clear'>
   Eliminar Tabla de Vehículos
   </button>
