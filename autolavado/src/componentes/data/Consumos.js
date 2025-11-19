@@ -1,15 +1,22 @@
 const TipoVehiculo = [
     {
-        tipo: 'Torton_Jaula',
+        tipo: 'Torton_Jaula Sucio',
         desinfectante: '1000 mL',
+        desengrasante: '1000 mL'},
+
+    {
+        tipo: 'Torton_Jaula',
+        desinfectante: '800 mL',
         desengrasante: '1000 mL'
     },
     {
-        tipo: 'Pick-Up'
+        tipo: 'Pick-Up',
+        desinfectante: '150 mL'
     },
 
     {
-        tipo: 'Automovil'
+        tipo: 'Automovil',
+        desinfectante: '100 mL'
     },
 
     {
@@ -80,7 +87,11 @@ const TipoVehiculo = [
         desengrasante: '2000 mL',
         desinfectante: '1700 mL'
     },
-
+    {
+        tipo: 'Pick-Up_3Toneladas Remolque Ganadero',
+        desengrasante: '500 mL',
+        desinfectante: '500 mL'
+    },
     {
         tipo: 'Trailer-Jaula Blanqueamiento',
         desinfectante: '1700 mL',
